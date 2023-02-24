@@ -10,7 +10,7 @@ const List = ({ kind }) => {
   return (
     <section className="">
       {/* Header */}
-      <h2 className="my-10 w-full text-3xl">
+      <h2 className="my-10 w-full font-inter text-3xl font-bold">
         {kind.name} {kind.signature}
       </h2>
 
@@ -19,22 +19,22 @@ const List = ({ kind }) => {
         {getList.map((card, index) => (
           <div
             key={index}
-            className="group relative top-0 left-0 h-80 w-40 transition-all duration-200 hover:-top-1 hover:-left-1">
+            className="group relative top-0 left-0 h-[20rem] w-[10rem] transition-all duration-200 hover:-top-1 hover:-left-1 sm:h-[25rem] sm:w-[12.5rem]">
             <div className="relative z-10 flex h-full w-full flex-col border-2 border-slate-800 bg-slate-200">
               {/* Card image */}
-              <div className="h-60 w-full bg-blue-400">
+              <div className="h-[15rem] w-full bg-blue-400 sm:h-[18rem]">
                 <img
-                  className="h-full w-full"
+                  className="h-full w-full object-cover"
                   src={`${process.env.REACT_APP_BASEIMAGEURL}${card.poster_path}`}
                   alt=""
                 />
               </div>
               {/* Card description */}
-              <div className="flex flex-col items-center justify-between px-2 text-sm">
+              <div className="flex h-full w-full flex-col items-center justify-between px-2 font-inter text-[0.6rem] sm:text-xs">
                 {isMovies ? (
                   // Movies
-                  <div>
-                    <div className="flex h-1/2 items-center justify-center text-center">
+                  <div className="my-1 flex h-full w-full flex-col justify-center gap-2">
+                    <div className="flex items-center justify-center text-center font-roboto-mono">
                       <h2 className="font-bold">{card.title}</h2>
                     </div>
                     <p className="">Rating: {card.vote_average}</p>
@@ -42,8 +42,8 @@ const List = ({ kind }) => {
                   </div>
                 ) : (
                   // TV Series
-                  <div>
-                    <div className="flex h-1/2 items-center justify-center text-center">
+                  <div className="my-1 flex h-full w-full flex-col justify-center gap-2">
+                    <div className="flex items-center justify-center text-center font-roboto-mono">
                       <h2 className="font-bold">{card.name}</h2>
                     </div>
                     <p className="">Rating: {card.vote_average}</p>
