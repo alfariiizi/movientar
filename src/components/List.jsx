@@ -5,7 +5,7 @@ const List = ({ kind }) => {
   const getList = useGetList(kind.tmdbLink);
 
   // Signature: Movie or TV Series
-  const isMovies = kind.signature == "Movies";
+  const isMovies = kind.signature === "Movies";
 
   return (
     <section className="">

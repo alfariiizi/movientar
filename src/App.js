@@ -1,9 +1,7 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import Footer from "./components/Footer";
-import List from "./components/List";
 import MainMenu from "./components/MainMenu";
 import Navbar from "./components/Navbar";
-import { moviesData } from "./data";
 
 import ImgBgMain from "./assets/main-background-image.jpg";
 
