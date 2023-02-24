@@ -10,7 +10,7 @@ const Dropdown = ({ name, options }) => {
       <div className="absolute top-10 left-0 z-[110] hidden h-auto w-auto flex-col divide-y-2 divide-slate-400 border-2 border-slate-800 duration-100 group-hover:flex">
         {options.map((option, index) => (
           <Link
-            className="h-full w-full bg-slate-100/80 p-1 duration-100 hover:bg-slate-200"
+            className="h-full w-full bg-slate-100/80 p-1 text-black duration-100 hover:bg-slate-200"
             key={index}
             to={option.link}>
             {option.name}

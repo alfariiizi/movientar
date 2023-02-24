@@ -10,7 +10,7 @@ const List = ({ kind }) => {
   return (
     <section className="">
       {/* Header */}
-      <h2 className="my-10 w-full font-inter text-3xl font-bold md:px-8 lg:px-12">
+      <h2 className="my-10 w-full font-roboto-mono text-3xl font-bold text-slate-200 md:px-8 lg:px-12">
         {kind.name} {kind.signature}
       </h2>
 
@@ -20,7 +20,7 @@ const List = ({ kind }) => {
           <div
             key={index}
             className="group relative top-0 left-0 h-[20rem] w-[10rem] transition-all duration-200 hover:-top-1 hover:-left-1 sm:h-[25rem] sm:w-[12.5rem]">
-            <div className="relative z-10 flex h-full w-full flex-col border-2 border-slate-800 bg-slate-200">
+            <div className="relative z-10 flex h-full w-full flex-col border-[3px] border-violet-600 bg-slate-200">
               {/* Card image */}
               <div className="h-[15rem] w-full bg-blue-400 sm:h-[18rem]">
                 <img
@@ -53,7 +53,7 @@ const List = ({ kind }) => {
               </div>
             </div>
             {/* Backside retro card style */}
-            <div className="absolute top-0 left-0 h-full w-full border-2 border-slate-800 bg-teal-500 opacity-0 duration-200 group-hover:top-2 group-hover:left-2 group-hover:opacity-100"></div>
+            <div className="absolute top-0 left-0 h-full w-full border-[3px] border-slate-800 bg-teal-500 opacity-0 duration-200 group-hover:top-2 group-hover:left-2 group-hover:opacity-100"></div>
           </div>
         ))}
       </div>
