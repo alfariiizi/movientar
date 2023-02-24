@@ -6,7 +6,9 @@ const List = ({ kind }) => {
   const getList = useGetList(kind.link);
   return (
     <section className="">
-      <h2 className="my-10 w-full text-3xl">{kind.name}</h2>
+      <h2 className="my-10 w-full text-3xl">
+        {kind.name} {kind.signature}
+      </h2>
       <div className="flex w-full justify-center">
         <div className="grid grid-cols-2 items-center justify-center gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
           {getList.map((movie, index) => (

@@ -1,10 +1,26 @@
 export const moviesData = {
   popular: {
-    name: "Popular Movie",
-    link: "/movie/popular",
+    signature: "Movies",
+    name: "Popular",
+    // link: "/movie/popular",
+    link: "/",
   },
   topRated: {
-    name: "Top Rated Movie",
+    signature: "Movies",
+    name: "Top Rated",
     link: "/movie/top_rated",
+  },
+};
+
+export const tvsData = {
+  popular: {
+    signature: "TV Series",
+    name: "Popular",
+    link: "/tv/popular",
+  },
+  topRated: {
+    signature: "TV Series",
+    name: "Top Rated",
+    link: "/tv/top_rated",
   },
 };
