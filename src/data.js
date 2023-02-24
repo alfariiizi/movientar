@@ -2,17 +2,20 @@ export const moviesData = {
   popular: {
     signature: "Movies",
     name: "Popular",
-    link: "/movie/popular",
+    link: "/",
+    tmdbLink: "/movie/popular",
   },
   topRated: {
     signature: "Movies",
     name: "Top Rated",
-    link: "/movie/top_rated",
+    link: "movientar/movie/top_rated",
+    tmdbLink: "/movie/top_rated",
   },
   nowPlaying: {
     signature: "Movies",
     name: "Now Playing",
-    link: "/movie/now_playing",
+    link: "movientar/movie/now_playing",
+    tmdbLink: "/movie/now_playing",
   },
 };
 
@@ -20,17 +23,20 @@ export const tvsData = {
   popular: {
     signature: "TV Series",
     name: "Popular",
-    link: "/tv/popular",
+    link: "movientar/tv/popular",
+    tmdbLink: "/tv/popular",
   },
   topRated: {
     signature: "TV Series",
     name: "Top Rated",
-    link: "/tv/top_rated",
+    link: "movientar/tv/top_rated",
+    tmdbLink: "/tv/top_rated",
   },
   onTheAir: {
     signature: "TV Series",
     name: "On The Air",
-    link: "/tv/on_the_air",
+    link: "movientar/tv/on_the_air",
+    tmdbLink: "/tv/on_the_air",
   },
 };
 
