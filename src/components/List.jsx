@@ -10,7 +10,7 @@ const List = ({ kind }) => {
   return (
     <section className="">
       {/* Header */}
-      <h2 className="my-10 w-full font-inter text-3xl font-bold">
+      <h2 className="my-10 w-full font-inter text-3xl font-bold md:px-8 lg:px-12">
         {kind.name} {kind.signature}
       </h2>
 
