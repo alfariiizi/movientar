@@ -14,6 +14,10 @@ const MainMenu = () => {
         path={moviesData.topRated.link}
         element={<List kind={moviesData.topRated} />}
       />
+      <Route
+        path={moviesData.nowPlaying.link}
+        element={<List kind={moviesData.nowPlaying} />}
+      />
 
       {/* TV Series */}
       <Route
@@ -23,6 +27,10 @@ const MainMenu = () => {
       <Route
         path={tvsData.topRated.link}
         element={<List kind={tvsData.topRated} />}
+      />
+      <Route
+        path={tvsData.onTheAir.link}
+        element={<List kind={tvsData.onTheAir} />}
       />
     </Routes>
   );
