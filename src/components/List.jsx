@@ -3,6 +3,7 @@ import useGetList from "../hooks/useGetList";
 
 const List = ({ kind }) => {
   const getList = useGetList(kind.link);
+
   return (
     <section className="">
       {/* Header */}
@@ -31,7 +32,7 @@ const List = ({ kind }) => {
               </div>
             </div>
             {/* Backside retro card style */}
-            <div className="absolute top-2 left-2 hidden h-full w-full border-2 border-slate-800 bg-teal-500 transition-all group-hover:block"></div>
+            <div className="absolute top-2 left-2 h-full w-full border-2 border-slate-800 bg-teal-500 opacity-0 duration-200 group-hover:opacity-100"></div>
           </div>
         ))}
       </div>

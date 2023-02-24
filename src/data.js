@@ -2,8 +2,7 @@ export const moviesData = {
   popular: {
     signature: "Movies",
     name: "Popular",
-    // link: "/movie/popular",
-    link: "/",
+    link: "/movie/popular",
   },
   topRated: {
     signature: "Movies",
