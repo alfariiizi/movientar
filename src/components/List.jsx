@@ -4,6 +4,9 @@ import useGetList from "../hooks/useGetList";
 const List = ({ kind }) => {
   const getList = useGetList(kind.link);
 
+  // Signature: Movie or TV Series
+  const isMovies = kind.signature == "Movies";
+
   return (
     <section className="">
       {/* Header */}
@@ -13,7 +16,7 @@ const List = ({ kind }) => {
 
       {/* List of all cards */}
       <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-4">
-        {getList.map((movie, index) => (
+        {getList.map((card, index) => (
           <div
             key={index}
             className="group relative top-0 left-0 h-80 w-40 transition-all duration-200 hover:-top-1 hover:-left-1">
@@ -22,15 +25,31 @@ const List = ({ kind }) => {
               <div className="h-60 w-full bg-blue-400">
                 <img
                   className="h-full w-full"
-                  src={`${process.env.REACT_APP_BASEIMAGEURL}${movie.poster_path}`}
+                  src={`${process.env.REACT_APP_BASEIMAGEURL}${card.poster_path}`}
                   alt=""
                 />
               </div>
               {/* Card description */}
               <div className="flex flex-col items-center justify-between px-2 text-sm">
-                <h2 className="font-bold">{movie.title}</h2>
-                <p className="">Rating: {movie.vote_average}</p>
-                <p>Release: {movie.release_date}</p>
+                {isMovies ? (
+                  // Movies
+                  <div>
+                    <div className="flex h-1/2 items-center justify-center text-center">
+                      <h2 className="font-bold">{card.title}</h2>
+                    </div>
+                    <p className="">Rating: {card.vote_average}</p>
+                    <p>Release: {card.release_date}</p>
+                  </div>
+                ) : (
+                  // TV Series
+                  <div>
+                    <div className="flex h-1/2 items-center justify-center text-center">
+                      <h2 className="font-bold">{card.name}</h2>
+                    </div>
+                    <p className="">Rating: {card.vote_average}</p>
+                    <p>Release: {card.first_air_date}</p>
+                  </div>
+                )}
               </div>
             </div>
             {/* Backside retro card style */}
