@@ -1,4 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import Footer from "./components/Footer";
 import MainMenu from "./components/MainMenu";
 import Navbar from "./components/Navbar";
@@ -7,7 +7,7 @@ import ImgBgMain from "./assets/main-background-image.jpg";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div
         style={{ backgroundImage: `url(${ImgBgMain})` }}
         className="absolute h-max w-full bg-cover">
@@ -17,7 +17,7 @@ function App() {
         </main>
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
