@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import Dropdown from "../tools/Dropdown";
 import { tvsData, moviesData, searchData } from "../data";
@@ -25,9 +25,11 @@ const Navbar = ({ titleSite }) => {
   return (
     <nav className="relative z-[100] text-slate-200">
       <div className="fixed flex h-14 w-full items-center justify-between border-b-[1px] border-b-slate-900 bg-slate-100/30 px-4 font-inter backdrop-blur-md">
-        <h1 className="flex-none text-center font-aboreto text-xl font-bold">
+        <Link
+          to={moviesData.popular.link}
+          className="flex-none text-center font-aboreto text-xl font-bold">
           {titleSite}
-        </h1>
+        </Link>
         <form onSubmit={handleSubmit} className="mx-10 w-full">
           <input
             type="text"
