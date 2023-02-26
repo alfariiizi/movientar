@@ -1,17 +1,16 @@
 import React from "react";
-import useGetList from "../hooks/useGetList";
 
-const List = ({ kind }) => {
-  const getList = useGetList(kind.tmdbLink);
+const List = ({ title, signature, hookGetApi, showSiganture = true }) => {
+  const getList = hookGetApi();
 
   // Signature: Movie or TV Series
-  const isMovies = kind.signature === "Movies";
+  const isMovies = signature === "Movies";
 
   return (
     <section className="">
       {/* Header */}
       <h2 className="my-10 w-full font-roboto-mono text-3xl font-bold text-slate-200 md:px-8 lg:px-12">
-        {kind.name} {kind.signature}
+        {title} {showSiganture && signature}
       </h2>
 
       {/* List of all cards */}

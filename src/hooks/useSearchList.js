@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { getSearch } from "../utilities/api";
 
-const useSearchList = ({ link, searchName }) => {
+const useSearchList = (link, searchName) => {
   const [listMovies, setListMovies] = useState([]);
 
   useEffect(() => {
@@ -10,7 +10,7 @@ const useSearchList = ({ link, searchName }) => {
       setListMovies(result);
     };
     tmp();
-  }, [link]);
+  }, [link, searchName]);
 
   return listMovies;
 };

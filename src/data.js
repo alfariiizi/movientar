@@ -1,4 +1,8 @@
+import useGetList from "./hooks/useGetList";
+import useSearchList from "./hooks/useSearchList";
+
 export const moviesData = {
+  customHook: useGetList,
   popular: {
     signature: "Movies",
     name: "Popular",
@@ -20,6 +24,7 @@ export const moviesData = {
 };
 
 export const tvsData = {
+  customHook: useGetList,
   popular: {
     signature: "TV Series",
     name: "Popular",
@@ -43,3 +48,11 @@ export const tvsData = {
 // export const movieOptions = moviesData.map((movie) => movie.name);
 
 // export const tvOptions = tvsData.map((tv) => tv.name);
+
+export const searchData = {
+  customHook: useSearchList,
+  link: "movientar/search/:id", // with id
+  linkWithoutId: "movientar/search/",
+  moviesTmdbLink: "/search/movie",
+  tvsTmdbLink: "/search/tv",
+};

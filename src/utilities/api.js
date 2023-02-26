@@ -8,10 +8,10 @@ export const getList = async (kind) => {
   return movies.data.results;
 };
 
-export const getSearch = async (kind, searchName) => {
+export const getSearch = async (link, searchName) => {
   // It can be movies or tv series
   const movies = await axios.get(
-    `${process.env.REACT_APP_BASEURL}/search${kind}?api_key=${process.env.REACT_APP_APIKEY}&query=${searchName}`
+    `${process.env.REACT_APP_BASEURL}${link}?api_key=${process.env.REACT_APP_APIKEY}&query=${searchName}`
   );
 
   return movies.data.results;

@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import Dropdown from "../tools/Dropdown";
-import { tvsData, moviesData } from "../data";
+import { tvsData, moviesData, searchData } from "../data";
 
 const Navbar = ({ titleSite }) => {
   const [searchName, setSearchName] = useState("");
+  const navigate = useNavigate();
 
   const movieOptions = [
     moviesData.popular,
@@ -15,6 +17,9 @@ const Navbar = ({ titleSite }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    navigate(
+      `${searchData.linkWithoutId}${encodeURI(searchName.toLowerCase())}`
+    );
   };
 
   return (
@@ -31,6 +36,7 @@ const Navbar = ({ titleSite }) => {
             onChange={(e) => setSearchName(e.target.value)}
             className="w-full rounded p-2 text-sm text-black"
           />
+          <button type="submit"></button>
         </form>
         <div className="flex grow items-center justify-center gap-1 sm:w-1/3 sm:gap-4">
           <Dropdown name={"Movies"} options={movieOptions} />
