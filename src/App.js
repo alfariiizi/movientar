@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
       <div
         style={{ backgroundImage: `url(${ImgBgMain})` }}
-        className="absolute h-max w-full">
+        className="absolute h-max w-full bg-cover">
         <Navbar titleSite={"Movientar"} />
         <main className="px-4 py-6 pt-16">
           <MainMenu />
