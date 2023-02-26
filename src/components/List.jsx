@@ -14,12 +14,12 @@ const List = ({ title, signature, hookGetApi, showSiganture = true }) => {
       </h2>
 
       {/* List of all cards */}
-      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-4">
+      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-6">
         {getList.map((card, index) => (
           <div
             key={index}
-            className="group relative top-0 left-0 h-[20rem] w-[10rem] transition-all duration-200 hover:-top-1 hover:-left-1 sm:h-[25rem] sm:w-[12.5rem]">
-            <div className="relative z-10 flex h-full w-full flex-col border-[3px] border-black bg-slate-200">
+            className="group relative top-0 left-0 h-[20rem] w-[10rem] transition-all duration-200 hover:-top-2 hover:-left-2 sm:h-[25rem] sm:w-[12.5rem]">
+            <div className="relative z-10 flex h-full w-full flex-col border-[3px] border-black bg-slate-200 sm:border-4">
               {/* Card image */}
               <div className="h-[18rem] w-full bg-blue-700 sm:h-[18rem]">
                 {card.poster_path ? (
@@ -58,7 +58,7 @@ const List = ({ title, signature, hookGetApi, showSiganture = true }) => {
               </div>
             </div>
             {/* Backside retro card style */}
-            <div className="absolute top-0 left-0 h-full w-full border-[3px] border-slate-800 bg-teal-500 opacity-0 duration-200 group-hover:top-2 group-hover:left-2 group-hover:opacity-100"></div>
+            <div className="absolute top-0 left-0 h-full w-full border-[3px] border-slate-800 bg-teal-500 opacity-0 duration-200 group-hover:top-3 group-hover:left-3 group-hover:opacity-100 sm:border-4"></div>
           </div>
         ))}
       </div>
