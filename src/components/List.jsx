@@ -18,7 +18,7 @@ const List = ({ title, signature, hookGetApi, showSiganture = true }) => {
         {getList.map((card, index) => (
           <div
             key={index}
-            className="group relative top-0 left-0 h-[20rem] w-[10rem] transition-all duration-200 hover:-top-2 hover:-left-2 sm:h-[25rem] sm:w-[12.5rem]">
+            className="group relative top-0 left-0 h-[21rem] w-[10rem] transition-all duration-200 hover:-top-2 hover:-left-2 sm:h-[26rem] sm:w-[12.5rem]">
             <div className="relative z-10 flex h-full w-full flex-col border-[3px] border-black bg-slate-200 sm:border-4">
               {/* Card image */}
               <div className="h-[18rem] w-full bg-blue-700 sm:h-[18rem]">
