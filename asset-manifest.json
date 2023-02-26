@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/movientar/static/css/main.a9482ba1.css",
-    "main.js": "/movientar/static/js/main.2dfd8ab3.js",
+    "main.css": "/movientar/static/css/main.dacdc4b2.css",
+    "main.js": "/movientar/static/js/main.86f839a6.js",
     "static/js/787.cc7b7fa5.chunk.js": "/movientar/static/js/787.cc7b7fa5.chunk.js",
-    "static/media/main-background-image.jpg": "/movientar/static/media/main-background-image.865d07ca2d0c9cf2e3a9.jpg",
+    "static/media/main-background-image3.jpg": "/movientar/static/media/main-background-image3.bcc70f6a2ca9706f95e0.jpg",
     "index.html": "/movientar/index.html",
-    "main.a9482ba1.css.map": "/movientar/static/css/main.a9482ba1.css.map",
-    "main.2dfd8ab3.js.map": "/movientar/static/js/main.2dfd8ab3.js.map",
+    "main.dacdc4b2.css.map": "/movientar/static/css/main.dacdc4b2.css.map",
+    "main.86f839a6.js.map": "/movientar/static/js/main.86f839a6.js.map",
     "787.cc7b7fa5.chunk.js.map": "/movientar/static/js/787.cc7b7fa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9482ba1.css",
-    "static/js/main.2dfd8ab3.js"
+    "static/css/main.dacdc4b2.css",
+    "static/js/main.86f839a6.js"
   ]
 }
