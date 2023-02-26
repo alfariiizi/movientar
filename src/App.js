@@ -13,7 +13,7 @@ function App() {
         style={{ backgroundImage: `url(${ImgBgMain})` }}
         className="absolute w-full bg-slate-800/30 bg-contain bg-repeat">
         <div className="bg-white/20 backdrop-blur-sm backdrop-brightness-50 sm:backdrop-blur-md">
-          <main className="px-4 py-6 pt-16">
+          <main className="min-h-screen px-4 py-6 pt-16">
             <MainMenu />
           </main>
           <Footer />
