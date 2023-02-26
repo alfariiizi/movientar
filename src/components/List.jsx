@@ -9,7 +9,7 @@ const List = ({ title, signature, hookGetApi, showSiganture = true }) => {
   return (
     <section className="">
       {/* Header */}
-      <h2 className="my-10 w-full font-roboto-mono text-3xl font-bold text-slate-200 md:px-8 lg:px-12">
+      <h2 className="my-10 w-full font-roboto-mono text-3xl font-bold md:px-8 lg:px-12">
         {title} {showSiganture && signature}
       </h2>
 
@@ -19,7 +19,7 @@ const List = ({ title, signature, hookGetApi, showSiganture = true }) => {
           <div
             key={index}
             className="group relative top-0 left-0 h-[20rem] w-[10rem] transition-all duration-200 hover:-top-1 hover:-left-1 sm:h-[25rem] sm:w-[12.5rem]">
-            <div className="relative z-10 flex h-full w-full flex-col border-[3px] border-violet-600 bg-slate-200">
+            <div className="relative z-10 flex h-full w-full flex-col border-[3px] border-black bg-slate-200">
               {/* Card image */}
               <div className="h-[18rem] w-full bg-blue-700 sm:h-[18rem]">
                 {card.poster_path ? (
