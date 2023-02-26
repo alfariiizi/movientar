@@ -33,7 +33,7 @@ const Navbar = ({ titleSite }) => {
         <form onSubmit={handleSubmit} className="mx-10 w-full">
           <input
             type="text"
-            placeholder="Search..."
+            placeholder="&#x1F50D; Search..."
             value={searchName}
             onChange={(e) => setSearchName(e.target.value)}
             className="w-full rounded p-2 text-sm text-black"
