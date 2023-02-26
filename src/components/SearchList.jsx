@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
-import { urlEncoder } from "../tools/urlEncoder";
 import List from "./List";
 
 const SearchList = ({ resource }) => {
