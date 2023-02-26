@@ -21,12 +21,18 @@ const List = ({ title, signature, hookGetApi, showSiganture = true }) => {
             className="group relative top-0 left-0 h-[20rem] w-[10rem] transition-all duration-200 hover:-top-1 hover:-left-1 sm:h-[25rem] sm:w-[12.5rem]">
             <div className="relative z-10 flex h-full w-full flex-col border-[3px] border-violet-600 bg-slate-200">
               {/* Card image */}
-              <div className="h-[15rem] w-full bg-blue-400 sm:h-[18rem]">
-                <img
-                  className="h-full w-full object-cover"
-                  src={`${process.env.REACT_APP_BASEIMAGEURL}${card.poster_path}`}
-                  alt=""
-                />
+              <div className="h-[18rem] w-full bg-blue-700 sm:h-[18rem]">
+                {card.poster_path ? (
+                  <img
+                    className="h-full w-full object-cover"
+                    src={`${process.env.REACT_APP_BASEIMAGEURL}${card.poster_path}`}
+                    alt=""
+                  />
+                ) : (
+                  <div className="flex h-full flex-col items-center justify-center text-center text-slate-200">
+                    <div>No Image Found</div>
+                  </div>
+                )}
               </div>
               {/* Card description */}
               <div className="flex h-full w-full flex-col items-center justify-between px-2 font-inter text-[0.6rem] sm:text-xs">
